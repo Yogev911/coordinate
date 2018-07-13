@@ -7,6 +7,7 @@ EARTH_RADIUS = 6371e3
 
 
 def get_point(coord_a, distance, azimuth, bearing):
+    # type: (Point, float, float,float) -> Point
     # Setting new target cord based on self coord, azimuth, distanse and elevation angle to target
     try:
         # Convert to radians
