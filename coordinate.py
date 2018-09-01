@@ -36,7 +36,7 @@ def get_point(coord_a, distance, azimuth, bearing):
 
 
 def get_relative_point_position(coord_a, coord_b):
-    # type: (Point, Point) -> tuple
+    # type: (Point, Point) -> (float, float, float)
     try:
         # get point b distance, azimuth and elevation relative point a
         ap = _location_to_point(coord_b)
